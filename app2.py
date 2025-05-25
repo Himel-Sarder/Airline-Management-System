@@ -735,7 +735,7 @@ def main():
         })
 
     if not st.session_state.logged_in:
-        st.title("Airline Management System")
+        st.markdown('<h1 style="color: white;">Airline Management System</h1>', unsafe_allow_html=True)
         user_type = st.radio("Select User Type", ["Passenger", "Admin"], horizontal=True)
 
         if user_type == "Passenger":
